@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJS Messaround</title>
+</head>
+<body>
+    <h1>Lets learn javascript</h1>
+    <h2>let's learn about onclick and alerts</h2>
+
+    <a href="https://www.youtube.com"
+    onclick="alert('Warning! You are about to leave the page!')">Youtube</a>
+
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity</h2>
+    <p id="secret"></p>
+    <button
+     onclick="
+      document.getElementById('secret').innerHTML='I have a big brain, I am Megamind';
+      document.getElementById('secret').style.display='block';
+      ">Reveal!
+    
+     
+    </button>
+    <button onclick="document.getElementById('secret').style.display='None';">
+        Hide
+    </button>
+    <h2>How do I change an image in javascript?
+    </h2>
+    <img src="images/lighton.jpg" id="myImage" style="height: 200px;width: 200px;">
+    <button onclick="document.getElementById('myImage').src='images/lightoff.jpg'">
+        Bulb off
+    </button>
+    <h2>How do we change styles with a button</h2>
+    <p id="alice">Hi, I am alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';
+    document.getElementById('alice').style.fontSize='50px';">
+        Cake - Eat me!
+    </button>
+    <button>
+        Potion - Drink me
+    </button>
+</body>
+</html>
