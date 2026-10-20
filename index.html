@@ -1,45 +1,98 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IJS Messaround</title>
+    <title>JS messaround</title>
 </head>
+
 <body>
-    <h1>Lets learn javascript</h1>
-    <h2>let's learn about onclick and alerts</h2>
 
-    <a href="https://www.youtube.com"
-    onclick="alert('Warning! You are about to leave the page!')">Youtube</a>
+    <h1>My JavaScript Demo</h1>
 
+    <!-- 1. Show and hide text -->
     <h2>How do we display and hide text?</h2>
-    <h2>What's my secret identity</h2>
-    <p id="secret"></p>
-    <button
-     onclick="
-      document.getElementById('secret').innerHTML='I have a big brain, I am Megamind';
-      document.getElementById('secret').style.display='block';
-      ">Reveal!
-    
-     
+    <h3>What's my secret identity?</h3>
+
+    <p id="secret" style="display: none;"></p>
+
+    <button onclick="
+        document.getElementById('secret').innerHTML =
+        'I have a big brain, I am Megamind';
+        document.getElementById('secret').style.display = 'block';
+    ">
+        Reveal!
     </button>
-    <button onclick="document.getElementById('secret').style.display='None';">
+
+    <button onclick="
+        document.getElementById('secret').style.display = 'none';
+    ">
         Hide
     </button>
-    <h2>How do I change an image in javascript?
-    </h2>
-    <img src="images/lighton.jpg" id="myImage" style="height: 200px;width: 200px;">
-    <button onclick="document.getElementById('myImage').src='images/lightoff.jpg'">
-        Bulb off
+
+    <!-- 2. Change the image -->
+    <h2>How do I change an image in JavaScript?</h2>
+
+    <img
+        src="images/lightoff.jpg"
+        id="myImage"
+        alt="Light bulb"
+        style="height: 200px; width: 200px;"
+    >
+
+    <br>
+
+    <button onclick="
+        document.getElementById('myImage').src = 'images/lighton.jpg';
+    ">
+        Turn Light On
     </button>
-    <h2>How do we change styles with a button</h2>
-    <p id="alice">Hi, I am alice</p>
-    <button onclick="document.getElementById('alice').style.color='blue';
-    document.getElementById('alice').style.fontSize='50px';">
-        Cake - Eat me!
+
+    <button onclick="
+        document.getElementById('myImage').src = 'images/lightoff.jpg';
+    ">
+        Turn Light Off
     </button>
-    <button>
-        Potion - Drink me
+
+    <!-- 3. Change text styles -->
+    <h2>How do we change styles with a button?</h2>
+
+    <p id="alice">Hi, I am Alice</p>
+
+    <button onclick="
+        document.getElementById('alice').style.color = 'blue';
+        document.getElementById('alice').style.fontSize = '50px';
+    ">
+        Cake - Eat Me!
     </button>
+
+    <button onclick="
+        document.getElementById('alice').style.color = 'black';
+        document.getElementById('alice').style.fontSize = '16px';
+    ">
+        Potion - Drink Me
+    </button>
+
+    <!-- 4. Individual challenge: change background color -->
+    <h2>My Individual Challenge: Messaround</h2>
+
+    <button onclick="
+        document.body.style.backgroundColor = 'lightblue';
+    ">
+        Change Background Color
+    </button>
+
+    <!-- 5. Individual challenge: change text decoration -->
+    <p id="messaround">
+        JavaScript can change how a webpage looks!
+    </p>
+
+    <button onclick="
+        document.getElementById('messaround').style.textDecoration = 'underline';
+    ">
+        Underline Text
+    </button>
+
 </body>
 </html>
